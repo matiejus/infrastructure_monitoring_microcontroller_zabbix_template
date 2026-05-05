@@ -1,0 +1,105 @@
+{
+    "zabbix_export": {
+        "version": "7.4",
+        "template_groups": [
+            {
+                "uuid": "7df96b18c230490a9a0a9e2307226338",
+                "name": "Templates"
+            }
+        ],
+        "templates": [
+            {
+                "uuid": "95e1039ce1514fe99dfd9fffaf2d370c",
+                "template": "mikrovaldiklis-items",
+                "name": "mikrovaldiklis-items",
+                "groups": [
+                    {
+                        "name": "Templates"
+                    }
+                ],
+                "items": [
+                    {
+                        "uuid": "d7f205f0ef5948a59374c4985e5b20fa",
+                        "name": "Device",
+                        "type": "TRAP",
+                        "key": "device.json",
+                        "value_type": "TEXT"
+                    },
+                    {
+                        "uuid": "ada075004af84223b1afc2ab413abbbc",
+                        "name": "ethernet_state",
+                        "type": "TRAP",
+                        "key": "net.ethernet_connected"
+                    },
+                    {
+                        "uuid": "dc907f067c8745ecb86ddd8065d9daff",
+                        "name": "ping_result",
+                        "type": "TRAP",
+                        "key": "net.ping_ok"
+                    },
+                    {
+                        "uuid": "97ee4997768d4fce969110f336da83db",
+                        "name": "wifi_state",
+                        "type": "TRAP",
+                        "key": "net.wifi_connected"
+                    },
+                    {
+                        "uuid": "d01600213c87416397dd9753ad9bea6f",
+                        "name": "WiFi RSSI",
+                        "type": "TRAP",
+                        "key": "net.wifi_rssi",
+                        "value_type": "FLOAT"
+                    },
+                    {
+                        "uuid": "6f44e1965e7c43e8b411d8496783201a",
+                        "name": "Air speed",
+                        "type": "TRAP",
+                        "key": "sensor.air_speed_ms",
+                        "value_type": "FLOAT"
+                    },
+                    {
+                        "uuid": "44f2d5aeec504fd6b7392817faaf5dc0",
+                        "name": "Humidity",
+                        "type": "TRAP",
+                        "key": "sensor.humidity_pct",
+                        "value_type": "FLOAT",
+                        "units": "%"
+                    },
+                    {
+                        "uuid": "47a4adecb0d24b10b4ea13119aee0751",
+                        "name": "Smoke detected",
+                        "type": "TRAP",
+                        "key": "sensor.smoke_detected"
+                    },
+                    {
+                        "uuid": "95ae30a6e84a441793445083b8f4f80a",
+                        "name": "Gas",
+                        "type": "TRAP",
+                        "key": "sensor.smoke_raw"
+                    },
+                    {
+                        "uuid": "a8892e7d22f44787a67024dc95896c46",
+                        "name": "Temperature",
+                        "type": "TRAP",
+                        "key": "sensor.temp_c",
+                        "value_type": "FLOAT",
+                        "units": "C"
+                    },
+                    {
+                        "uuid": "efd83cbabaac48b98245db7c774fe8ca",
+                        "name": "Power voltage",
+                        "type": "TRAP",
+                        "key": "sensor.voltage_v",
+                        "value_type": "FLOAT"
+                    },
+                    {
+                        "uuid": "7bf84eb476f248ca9267653c236c2e93",
+                        "name": "Uptime",
+                        "type": "TRAP",
+                        "key": "system.uptime_ms"
+                    }
+                ]
+            }
+        ]
+    }
+}
